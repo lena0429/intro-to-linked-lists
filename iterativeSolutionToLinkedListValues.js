@@ -17,3 +17,14 @@ a.next = b;
 b.next = c;
 c.next = d;
 
+function LinkedListValues(head) {
+    const values = [];
+    let current = head;
+    while (current !== null) {
+        values.push(current.val)
+        current = current.next;
+    }
+    return values;
+}
+
+LinkedListValues(a)

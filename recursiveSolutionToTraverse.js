@@ -16,7 +16,7 @@ c.next = d;
 
 function recursiveSolution(head){
     let current = head;
-    if (current === null) return;
+    if (current === null) return;  // base case
 
     console.log(current.val);
     recursiveSolution(current.next);

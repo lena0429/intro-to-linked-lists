@@ -33,5 +33,27 @@ const printRecursive = (head) => {
     printRecursive(current.next);
 }
 
+## Linked List Values
+* Big O Notation
+n = # of nodes
+Time Complexity: O(n)
+Space Complexity: O(n) 
+
+## Return Sum of All Values in Linked List
+step -
+(1) traverse in order through the linked list
+(2) accumulate a sum
+
+* interative solution
+n = # of nodes
+Time Complexity: O(n)
+Space Complexity: O(n) 
+
+* recursive solution
+The space complexity would actually be a little more than out iterative solution. We would have O of n space here because of the call stack. Typically, when we analyze our We should include the space utilize for making these recursive function calls.
+
+## Video
+Watch the full tutorial video from freeCodeCamp on <a href="https://www.youtube.com/watch?v=Hj_rA0dhr2I&list=PLq40WqbjDuSwoiI-l1CyfPeW6nTwHTuAg&index=4">Youtube</a>
+
 ## Usage
 $ node linkedLists.js
