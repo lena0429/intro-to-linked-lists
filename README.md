@@ -70,6 +70,27 @@ Space Complexity: O(1)
 base case 1 : if head.val equal target, then return true
 base case 2: if head is null, then return false
 
+n = # of nodes
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+We are going to have O of n runtime because we make a call for every node of the linked list.
+We also have O of n space because each of those calls by the time we bought them out at a base case, we would have to store those on the call stack. The worst case scenario is if our target is not found within the linked list. 
+
+## Get Node Value
+* interative solution
+n = # of nodes
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+* recursive solution
+base case 1: if head is null, then return null
+base case 2: if index is 0, return head.val
+
+n = # of nodes
+Time Complexity: O(n)
+Space Complexity: O(n)
+
 ## Video
 Watch the full tutorial video from freeCodeCamp on <a href="https://www.youtube.com/watch?v=Hj_rA0dhr2I&list=PLq40WqbjDuSwoiI-l1CyfPeW6nTwHTuAg&index=4">Youtube</a>
 
