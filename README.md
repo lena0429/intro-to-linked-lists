@@ -18,22 +18,23 @@ A linked list contains a bunch of nodes linked together. We can consider a linke
 If I want to traverse through a linked list and print out every node, I would need to continually update a current pointer. In the context of my function, the only important variable I am going to track is `current`, which starts at the head of my linked list - a node.  
 
 ### Iterative Function
-const printLinkedList = (head) => {
+`const printLinkedList = (head) => {
    let current = head;
    while (current !== null) {
        console.log(current.val);
        current = current.next;
    }
 }
+`
 
 ### Recursive Function
-const printRecursive = (head) => {
+`const printRecursive = (head) => {
     let current = head
     if (current === null) return;    // base case
 
     console.log(current.val);
     printRecursive(current.next);
-}
+}`
 
 ## 2. Linked List Values
 ### Big O Notation
