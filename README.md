@@ -17,7 +17,7 @@ A linked list contains a bunch of nodes linked together. We can consider a linke
 ## 1. Linked List Traverse
 If I want to traverse through a linked list and print out every node, I would need to continually update a current pointer. In the context of my function, the only important variable I am going to track is `current`, which starts at the head of my linked list - a node.  
 
-* Iterative Function
+### Iterative Function
 const printLinkedList = (head) => {
    let current = head;
    while (current !== null) {
@@ -26,7 +26,7 @@ const printLinkedList = (head) => {
    }
 }
 
-* Recursive Function
+### Recursive Function
 const printRecursive = (head) => {
     let current = head
     if (current === null) return;    // base case
@@ -36,7 +36,7 @@ const printRecursive = (head) => {
 }
 
 ## 2. Linked List Values
-* Big O Notation
+### Big O Notation
 n = # of nodes
 Time Complexity: O(n)
 Space Complexity: O(n) 
@@ -46,12 +46,12 @@ step -
 (1) traverse in order through the linked list
 (2) accumulate a sum
 
-* interative solution
+### interative solution
 n = # of nodes
 Time Complexity: O(n)
 Space Complexity: O(n) 
 
-* recursive solution
+### recursive solution
 The space complexity would actually be a little more than out iterative solution. We would have O of n space here because of the call stack. Typically, when we analyze this, we should include the space utilize for making these recursive function calls.
 
 n = # of nodes
@@ -61,12 +61,12 @@ Space Complexity: O(n)
 ## 4. Linked List Find
 Given a linked list as input and a target value, write a function that will return a boolean value whether or not the target value is contained within the linked list. 
 
-- interative solution
+### interative solution
 n = # of nodes
 Time Complexity: O(n)
 Space Complexity: O(1)
 
-- recursive solution
+### recursive solution
 base case 1 : if head.val equal target, then return true
 base case 2: if head is null, then return false
 
@@ -78,12 +78,12 @@ We are going to have O of n runtime because we make a call for every node of the
 We also have O of n space because each of those calls by the time we bought them out at a base case, we would have to store those on the call stack. The worst case scenario is if our target is not found within the linked list. 
 
 ## Get Node Value
-* interative solution
+### interative solution
 n = # of nodes
 Time Complexity: O(n)
 Space Complexity: O(1)
 
-* recursive solution
+### recursive solution
 base case 1: if head is null, then return null
 base case 2: if index is 0, return head.val
 
