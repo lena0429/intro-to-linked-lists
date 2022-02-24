@@ -1,13 +1,13 @@
 
 # Terminology
 ## 1. Node
-We can think of a node as a container for some data. It can be conceptually visualized as a circle that we can put some data inside. We can store any data type in a node.
+We can think of a node as a container for some data. It can be conceptually visualized as a circle that we can put some data inside. We can store any data type in a node. Each node has two attributes: `value` and `next`.
 
 * tail - the very last node that has its next pointer pointing to nothing or has its next set to null. 
-* head - the very first node. A head has a position of 0.
+* head - the very first node. A head has a position of 0. As long as we know where the list starts, we can always traverse it to access all other nodes in the list by using the `next` property.
 
 ## 2. Linked List
-A linked list contains a bunch of nodes linked together. We can consider a linked list ordered data structure.
+A linked list contains a bunch of nodes linked together. We can consider a linked list ordered data structure. The `head` node denotes the start of the list.
 
 ## 3. Linked Lists & Arrays
 * An array must be stored contiguously (right next to each other) in memory. 
@@ -105,6 +105,14 @@ n = # of nodes
 n = # of nodes
 * Time Complexity: O(n)
 * Space Complexity: O(n)
+
+## 7. Zipper Linked Lists
+In this problem, we are going to take in two linked list and zipper these two lists together. In other words, we need to in place reassign all of these next pointers such that we alternate between the nodes of list one and list two. We should always start with the first node of list one. 
+
+### Interative Solution
+n = # of nodes
+* Time Complexity: O(min(n + m))
+* Space Complexity: O(1)
 
 ## Video
 Watch the full tutorial video from freeCodeCamp on <a href="https://www.youtube.com/watch?v=Hj_rA0dhr2I&list=PLq40WqbjDuSwoiI-l1CyfPeW6nTwHTuAg&index=4">Youtube</a>
