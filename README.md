@@ -50,7 +50,7 @@ Time Complexity: O(n)
 Space Complexity: O(n) 
 
 * recursive solution
-The space complexity would actually be a little more than out iterative solution. We would have O of n space here because of the call stack. Typically, when we analyze our We should include the space utilize for making these recursive function calls.
+The space complexity would actually be a little more than out iterative solution. We would have O of n space here because of the call stack. Typically, when we analyze this, we should include the space utilize for making these recursive function calls.
 
 ## Video
 Watch the full tutorial video from freeCodeCamp on <a href="https://www.youtube.com/watch?v=Hj_rA0dhr2I&list=PLq40WqbjDuSwoiI-l1CyfPeW6nTwHTuAg&index=4">Youtube</a>
