@@ -61,12 +61,12 @@ Space Complexity: O(n)
 ## 4. Linked List Find
 Given a linked list as input and a target value, write a function that will return a boolean value whether or not the target value is contained within the linked list. 
 
-* interative solution
+- interative solution
 n = # of nodes
 Time Complexity: O(n)
 Space Complexity: O(1)
 
-* recursive solution
+- recursive solution
 base case 1 : if head.val equal target, then return true
 base case 2: if head is null, then return false
 
