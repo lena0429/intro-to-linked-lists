@@ -28,8 +28,7 @@ If I want to traverse through a linked list and print out every node, I would ne
 `
 
 ### Recursive Function
-`
-const printRecursive = (head) => {
+`const printRecursive = (head) => {
     let current = head
     if (current === null) return;    // base case
 
