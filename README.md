@@ -28,52 +28,54 @@ If I want to traverse through a linked list and print out every node, I would ne
 `
 
 ### Recursive Function
-`const printRecursive = (head) => {
+`
+const printRecursive = (head) => {
     let current = head
     if (current === null) return;    // base case
 
     console.log(current.val);
     printRecursive(current.next);
-}`
+}
+`
 
 ## 2. Linked List Values
 ### Big O Notation
 n = # of nodes
-Time Complexity: O(n)
-Space Complexity: O(n) 
+* Time Complexity: O(n)
+* Space Complexity: O(n) 
 
 ## 3. Linked List Sum
 step -
-(1) traverse in order through the linked list
-(2) accumulate a sum
+* (1) traverse in order through the linked list
+* (2) accumulate a sum
 
 ### interative solution
 n = # of nodes
-Time Complexity: O(n)
-Space Complexity: O(n) 
+* Time Complexity: O(n)
+* Space Complexity: O(n) 
 
 ### recursive solution
 The space complexity would actually be a little more than out iterative solution. We would have O of n space here because of the call stack. Typically, when we analyze this, we should include the space utilize for making these recursive function calls.
 
 n = # of nodes
-Time Complexity: O(n)
-Space Complexity: O(n) 
+* Time Complexity: O(n)
+* Space Complexity: O(n) 
 
 ## 4. Linked List Find
 Given a linked list as input and a target value, write a function that will return a boolean value whether or not the target value is contained within the linked list. 
 
 ### interative solution
 n = # of nodes
-Time Complexity: O(n)
-Space Complexity: O(1)
+* Time Complexity: O(n)
+* Space Complexity: O(1)
 
 ### recursive solution
-base case 1 : if head.val equal target, then return true
-base case 2: if head is null, then return false
+* base case 1 : if head.val equal target, then return true
+* base case 2: if head is null, then return false
 
 n = # of nodes
-Time Complexity: O(n)
-Space Complexity: O(n)
+* Time Complexity: O(n)
+* Space Complexity: O(n)
 
 We are going to have O of n runtime because we make a call for every node of the linked list.
 We also have O of n space because each of those calls by the time we bought them out at a base case, we would have to store those on the call stack. The worst case scenario is if our target is not found within the linked list. 
@@ -81,16 +83,16 @@ We also have O of n space because each of those calls by the time we bought them
 ## Get Node Value
 ### interative solution
 n = # of nodes
-Time Complexity: O(n)
-Space Complexity: O(1)
+* Time Complexity: O(n)
+* Space Complexity: O(1)
 
 ### recursive solution
-base case 1: if head is null, then return null
-base case 2: if index is 0, return head.val
+* base case 1: if head is null, then return null
+* base case 2: if index is 0, return head.val
 
 n = # of nodes
-Time Complexity: O(n)
-Space Complexity: O(n)
+* Time Complexity: O(n)
+* Space Complexity: O(n)
 
 ## Video
 Watch the full tutorial video from freeCodeCamp on <a href="https://www.youtube.com/watch?v=Hj_rA0dhr2I&list=PLq40WqbjDuSwoiI-l1CyfPeW6nTwHTuAg&index=4">Youtube</a>
