@@ -30,7 +30,7 @@ If I want to traverse through a linked list and print out every node, I would ne
 ### Recursive Function
 `const printRecursive = (head) => {
     let current = head
-    if (current === null) return;    // base case
+    if (current === null) return; 
 
     console.log(current.val);
     printRecursive(current.next);
@@ -79,7 +79,7 @@ n = # of nodes
 We are going to have O of n runtime because we make a call for every node of the linked list.
 We also have O of n space because each of those calls by the time we bought them out at a base case, we would have to store those on the call stack. The worst case scenario is if our target is not found within the linked list. 
 
-## Get Node Value
+## 5. Get Node Value
 ### interative solution
 n = # of nodes
 * Time Complexity: O(n)
@@ -89,6 +89,19 @@ n = # of nodes
 * base case 1: if head is null, then return null
 * base case 2: if index is 0, return head.val
 
+n = # of nodes
+* Time Complexity: O(n)
+* Space Complexity: O(n)
+
+## 6. Reverse Linked List
+Reverse the order of the nodes in the given linked list and return the new head of the reversed linked list.
+
+### Interative Solution
+n = # of nodes
+* Time Complexity: O(n) => traversing through the entire linked list ONCE
+* Space Complexity: O(1) => because we only need ONE fixed number of variables 
+
+### Recursive Solution
 n = # of nodes
 * Time Complexity: O(n)
 * Space Complexity: O(n)
