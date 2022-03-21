@@ -14,7 +14,7 @@ A linked list contains a bunch of nodes linked together. We can consider a linke
 * An linked list does not require its nodes stored contiguously in memory. 
 
 # Functions
-## 1. Linked List Traverse
+## 1. Linked List Traversal
 If I want to traverse through a linked list and print out every node, I would need to continually update a current pointer. In the context of my function, the only important variable I am going to track is `current`, which starts at the head of my linked list - a node.  
 
 ### Iterative Function
@@ -94,7 +94,8 @@ n = # of nodes
 * Space Complexity: O(n)
 
 ## 6. Reverse Linked List
-Reverse the order of the nodes in the given linked list and return the new head of the reversed linked list.
+Reverse the order of the nodes in the given linked list and return the new head of the reversed linked list. 
+
 
 ### Interative Solution
 n = # of nodes
@@ -107,7 +108,10 @@ n = # of nodes
 * Space Complexity: O(n)
 
 ## 7. Zipper Linked Lists
-In this problem, we are going to take in two linked list and zipper these two lists together. In other words, we need to in place reassign all of these next pointers such that we alternate between the nodes of list one and list two. We should always start with the first node of list one. 
+In this problem, we are going to take in two linked list and zipper these two lists together. 
+
+### Add a Exeplanation of the Code
+We need to in place reassign all of these `next` pointers such that we alternate between the nodes of List One and List Two. Also we should always start with the first node of List One. And then from that point on simply alternate. Since we don't have many assumptions we can use when it comes to the length of both of our lists, except that we know that each list is none empty. What we want to do is alterante as much as we can, and then just terminate the linked list with the remaining nodes. Then I just take all of the remaining nodes of the linked list and add them to the very end.     
 
 ### Interative Solution
 n = # of nodes
