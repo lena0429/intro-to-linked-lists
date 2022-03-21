@@ -26,3 +26,18 @@ getNodeValue(a, 1)    // "B"
 getNodeValue(b, 2)    // "D"
 getNodeValue(a, 7)    // null
 getNodeValue(a, 0)    // "A"
+
+
+// n = # of nodes
+// Time Complexity: O(n)
+// Space Complexity: O(n) => because we are going to storing every call upon the call stack
+
+const getNodeValue = (head, index) => {
+    let current = head;
+    while (current !== null) {
+        if (index === 0) return current.val;
+        index += 1
+        current = current.next
+    }
+    return null;
+}

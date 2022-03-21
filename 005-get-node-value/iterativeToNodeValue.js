@@ -28,3 +28,8 @@ iterativeToGetNodeValue(a, 1)    // "b"
 iterativeToGetNodeValue(b, 2)    // "d"
 iterativeToGetNodeValue(a, 7)    // null
 iterativeToGetNodeValue(a, 0)    // "a"
+
+
+// n = # of nodes
+// Time Complexity: O(n)
+// Space Complexity: O(1)
