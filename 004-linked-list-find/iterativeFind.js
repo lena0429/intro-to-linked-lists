@@ -28,3 +28,7 @@ function iterativeSolutionToFind(head, target) {
 }
 
 iterativeSolutionToFind(a, "c")
+
+// n = # of nodes
+// Time Complexity: O(n)
+// Space Complexity: O(n)

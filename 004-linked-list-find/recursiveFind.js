@@ -25,3 +25,8 @@ const recursiveFind = (head, target) => {
 }
 
 recursiveFind(a, "C")
+
+
+// n = # of nodes
+// Time Complexity: O(n)
+// Space Complexity: O(n)
