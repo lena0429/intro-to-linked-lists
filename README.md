@@ -13,6 +13,9 @@ A linked list contains a bunch of nodes linked together. We can consider a linke
 * An array must be stored contiguously (right next to each other) in memory. 
 * An linked list does not require its nodes stored contiguously in memory. 
 
+## Note
+It is important that you try to write your logic about just your current node when doing listed list algorithms.
+
 # Functions
 ## 1. Linked List Traversal
 If I want to traverse through a linked list and print out every node, I would need to continually update a current pointer. In the context of my function, the only important variable I am going to track is `current`, which starts at the head of my linked list - a node.  
@@ -38,10 +41,7 @@ If I want to traverse through a linked list and print out every node, I would ne
 `
 
 ## 2. Linked List Values
-### Big O Notation
-n = # of nodes
-* Time Complexity: O(n)
-* Space Complexity: O(n) 
+
 
 ## 3. Linked List Sum
 step -
