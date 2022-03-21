@@ -42,7 +42,6 @@ If I want to traverse through a linked list and print out every node, I would ne
 
 ## 2. Linked List Values
 
-
 ## 3. Linked List Sum
 step -
 * (1) traverse in order through the linked list

@@ -22,3 +22,8 @@ const LinkedListSum = (head) => {
 }
 
 LinkedListSum(a)
+
+const linkedSum = (head) => {
+    if (head === null) return 0;
+    return head.val+ linkedSum(head.next)
+}
